@@ -1,0 +1,35 @@
+<p>form works!</p>
+<div>
+    <h2>Formulario de Alta de Usuario</h2>
+    <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+      <label>
+        Nombre:
+        <input formControlName="firstName" />
+      </label>
+      <label>
+        Apellido:
+        <input formControlName="lastName" />
+      </label>
+      <label>
+        Email:
+        <input formControlName="email" />
+      </label>
+      <label>
+        Teléfono:
+        <input formControlName="phone" />
+      </label>
+      <label>
+        Dirección:
+        <input formControlName="address" />
+      </label>
+      <label>
+        Ciudad:
+        <input formControlName="city" />
+      </label>
+      <label>
+        Fecha de Nacimiento:
+        <input formControlName="birthDate" type="date" />
+      </label>
+      <button type="submit" [disabled]="!userForm.valid">Enviar Datos</button>
+    </form>
+  </div>

@@ -1,0 +1,29 @@
+<p>table works!</p>
+<!-- src/app/tabla/table/table.component.html -->
+<div>
+    <h2>Tabla de Datos</h2>
+    <button (click)="toggleTable()">Modificar Tabla</button>
+    <table>
+      <thead [ngClass]="{'modified': headerModified}">
+        <tr>
+          <th *ngIf="showColumns.column1">Columna 1</th>
+          <th *ngIf="showColumns.column2">Columna 2</th>
+          <th *ngIf="showColumns.column3">Columna 3</th>
+          <th *ngIf="showColumns.column4">Columna 4</th>
+          <th *ngIf="showColumns.column5">Columna 5</th>
+          <th *ngIf="showColumns.column6">Columna 6</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let row of data">
+          <td *ngIf="showColumns.column1">{{ row.column1 }}</td>
+          <td *ngIf="showColumns.column2">{{ row.column2 }}</td>
+          <td *ngIf="showColumns.column3">{{ row.column3 }}</td>
+          <td *ngIf="showColumns.column4">{{ row.column4 }}</td>
+          <td *ngIf="showColumns.column5">{{ row.column5 }}</td>
+          <td *ngIf="showColumns.column6">{{ row.column6 }}</td>
+        </tr>
+    </tbody>
+    </table>
+</div>
+
