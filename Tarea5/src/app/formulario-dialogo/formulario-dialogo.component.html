@@ -1,0 +1,10 @@
+<!-- src/app/formulario-dialogo/formulario-dialogo.component.html -->
+<div>
+    <button mat-raised-button (click)="openDialog()">Abrir Formulario</button>
+    <div *ngIf="datos">
+      <p>Nombre: {{ datos.nombre }}</p>
+      <p>Email: {{ datos.email }}</p>
+      <p>Dirección: {{ datos.direccion }}</p>
+    </div>
+  </div>
+  

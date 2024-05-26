@@ -1,0 +1,26 @@
+<!-- src/app/graficos/graficos.component.html -->
+<div style="display: block;">
+    <h2>Gráfico de Líneas</h2>
+    <canvas baseChart
+      [datasets]="lineChartData"
+      [labels]="lineChartLabels"
+      [options]="lineChartOptions"
+      [colors]="lineChartColors"
+      [legend]="lineChartLegend"
+      [chartType]="lineChartType"
+      [plugins]="lineChartPlugins">
+    </canvas>
+  </div>
+  
+  <div style="display: block;">
+    <h2>Gráfico de Barras</h2>
+    <canvas baseChart
+      [datasets]="barChartData"
+      [labels]="barChartLabels"
+      [options]="barChartOptions"
+      [legend]="barChartLegend"
+      [chartType]="barChartType"
+      [plugins]="barChartPlugins">
+    </canvas>
+  </div>
+  

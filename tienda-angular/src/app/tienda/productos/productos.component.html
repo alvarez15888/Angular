@@ -1,0 +1,9 @@
+<p>productos works!</p>
+<div>
+  <h2>Productos en {{ categoria }}</h2>
+  <ul>
+    <li *ngFor="let producto of productos" (click)="verDetalleProducto(producto.id)">
+      {{ producto.title }}
+    </li>
+  </ul>
+</div>
