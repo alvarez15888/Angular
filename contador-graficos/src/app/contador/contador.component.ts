@@ -8,7 +8,7 @@ import { ContadorService } from '../contador.service';
   styleUrls: ['./contador.component.scss']
 })
 export class ContadorComponent implements OnInit {
-  contador: number;
+    contador: number;
 
   constructor(private contadorService: ContadorService) {
     this.contadorService.contador$.subscribe(value => {

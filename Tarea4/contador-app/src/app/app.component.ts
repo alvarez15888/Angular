@@ -1,4 +1,3 @@
-// src/app/app.module.ts
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
@@ -7,7 +6,6 @@ import { ContadorComponent } from './contador/contador.component';
 import { SumarComponent } from './sumar/sumar.component';
 import { RestarComponent } from './restar/restar.component';
 import { ReiniciarComponent } from './reiniciar/reiniciar.component';
-import { BaseChartDirective } from 'ng2-charts';
 
 @NgModule({
   declarations: [
@@ -19,8 +17,7 @@ import { BaseChartDirective } from 'ng2-charts';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    BaseChartDirective
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
